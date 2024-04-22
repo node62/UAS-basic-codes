@@ -22,11 +22,11 @@ def save_frames(video_path, output_folder):
 
         frame_filename = f"{output_folder}/frame_{frame_number}.png"
         cv2.imwrite(frame_filename, frame)
-
+    
     cap.release()
 
 if __name__ == "__main__":
 
-    video_path = "video.mp4"
+    video_path = "output/video_1.mp4"
     output_folder = "frames"
     save_frames(video_path, output_folder)
